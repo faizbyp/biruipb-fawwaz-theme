@@ -1,0 +1,43 @@
+// Custom SASS
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@font-face {
+  font-family: 'Barmeno';
+  src: url('../assets/fonts/barmeno-regular.otf');
+  src: url('../assets/fonts/barmeno-regular.otf') format('opentype'),
+  url('../assets/fonts/barmeno-medium.otf') format('opentype'),
+  url('../assets/fonts/barmeno-bold.otf') format('opentype'),
+  url('../assets/fonts/barmeno-extrabold.ttf') format('trutype');
+}
+
+$primary: #263C92;
+$font-family-base: 'Inter', sans-serif;
+$navbar-h: 125px;
+
+.navbar { height: $navbar-h; }
+
+.additional-nav {
+  border-bottom-right-radius: 30px !important;
+  border-bottom-left-radius: 30px !important;
+  z-index: 1;
+  position: relative;
+  height: 66px;
+}
+
+.text-barmeno { font-family: 'Barmeno', sans-serif; }
+
+.hero {
+  background: linear-gradient(180deg, rgba(255,255,255,0),rgba(255,255,255,1)), url('../assets/img/student-life-banner 1.png') no-repeat center top;
+  margin-top: -66px;
+  z-index: 0;
+  height: 75vh;
+  // position: relative;
+}
+
+// .hero-content {
+//   position: absolute;
+//   bottom: 0;
+//   left: auto;
+//   right: auto;
+// }
+
+@import "../node_modules/bootstrap/scss/bootstrap";
