@@ -49,7 +49,7 @@
 
 <article class="container py-5 my-5">
   <div class="row text-center d-flex justify-content-center">
-    <p>NEWS</p>
+    <p class="text-muted">NEWS</p>
     <h2 class="fw-bold">Latest News for You</h2>
     <svg width="114" height="12" viewBox="0 0 114 12" fill="none" xmlns="http://www.w3.org/2000/svg">
       <g filter="url(#filter0_d_26_330)">
@@ -69,9 +69,18 @@
       </defs>
     </svg>
   </div>
+  
+  <div class="grid-container my-4">
+    <img style="grid-column: 1 / 3; grid-row: 1 / 3; height: 100%;" 
+    src="wp-content/themes/bootstrap/assets/img/image 2.png" alt="" class="img-fluid">
+    <img style="grid-column: 3 / 5; grid-row: 1 / 2;"
+    src="wp-content/themes/bootstrap/assets/img/image 3.png" alt="" class="img-fluid">
+    <img style="grid-column: 3 / 4; grid-row: 2 / 3;"
+    src="wp-content/themes/bootstrap/assets/img/image 4.png" alt="" class="img-fluid">
+    <img style="grid-column: 4 / 5; grid-row: 2 / 3;"
+    src="wp-content/themes/bootstrap/assets/img/image 5.png" alt="" class="img-fluid">
 
-  <!-- image gallery using grid -->
-
+  </div>
 </article>
 
 <?php get_footer();?>

@@ -36,8 +36,11 @@ $navbar-h: 125px;
 // .hero-content {
 //   position: absolute;
 //   bottom: 0;
-//   left: auto;
-//   right: auto;
 // }
+
+.grid-container {
+  display: grid;
+  gap: 1rem;
+}
 
 @import "../node_modules/bootstrap/scss/bootstrap";
