@@ -6,7 +6,7 @@
 
 <body <?php body_class(); ?>>
 
-<nav class="navbar bg-primary py-0">
+<header class="navbar bg-primary py-0">
   <div class="container px-0">
     <a class="navbar-brand col">
       <img src="wp-content/themes/bootstrap/assets/img/logo_ipb.png" alt="IPB">
@@ -28,8 +28,13 @@
       </form>
     </div>
   </div>
-</nav>
+</header>
 
-<nav class="container d-flex justify-content-center p-3 bg-white additional-nav text-primary" style="--bs-bg-opacity: .8;">
-  test
+<nav class="navbar container d-flex justify-content-evenly p-3 bg-white additional-nav text-primary" style="--bs-bg-opacity: .8;">
+  <a href="#" class="text-decoration-none">Home</a>
+  <a href="#" class="text-decoration-none">About</a>
+  <a href="#" class="text-decoration-none">Academic</a>
+  <a href="#" class="text-decoration-none">Student</a>
+  <a href="#" class="text-decoration-none">Research</a>
+  <a href="#" class="text-decoration-none">Alumni</a>
 </nav>
