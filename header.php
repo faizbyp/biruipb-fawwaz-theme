@@ -11,7 +11,7 @@
     <a class="navbar-brand col">
       <img src="wp-content/themes/bootstrap/assets/img/logo_ipb.png" alt="IPB">
     </a>
-    <div class="col-3">
+    <div class="col-3 d-none d-lg-block">
       <div class="text-end mb-2">
         <a href="#" class="text-white text-decoration-none mx-1">Media</a>
         <a href="#" class="text-white text-decoration-none mx-1">Unduhan</a>

@@ -24,8 +24,7 @@
 .hero {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0), rgb(255, 255, 255)), url("../assets/img/student-life-banner 1.png") no-repeat center top;
   margin-top: -66px;
-  z-index: 0;
-  height: 75vh;
+  height: 500px;
 }
 
 .grid-container {

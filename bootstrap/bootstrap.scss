@@ -28,15 +28,8 @@ $navbar-h: 125px;
 .hero {
   background: linear-gradient(180deg, rgba(255,255,255,0),rgba(255,255,255,1)), url('../assets/img/student-life-banner 1.png') no-repeat center top;
   margin-top: -66px;
-  z-index: 0;
-  height: 75vh;
-  // position: relative;
+  height: 500px;
 }
-
-// .hero-content {
-//   position: absolute;
-//   bottom: 0;
-// }
 
 .grid-container {
   display: grid;
