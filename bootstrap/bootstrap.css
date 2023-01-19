@@ -33,8 +33,19 @@
 }
 
 .news-cont {
-  background-color: linear-gradient(180deg, rgba(255, 255, 255, 0), rgb(38, 60, 146));
   position: relative;
+  display: inline-block;
+}
+
+.news-cont:after {
+  background-color: linear-gradient(180deg, rgba(255, 255, 255, 0), rgb(38, 60, 146));
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
 }
 
 .bottom-left {
