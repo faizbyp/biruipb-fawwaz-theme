@@ -30,11 +30,18 @@
   </div>
 </header>
 
-<nav class="navbar container d-flex justify-content-evenly p-3 bg-white additional-nav text-primary" style="--bs-bg-opacity: .8;">
-  <a href="#" class="text-decoration-none">Home</a>
-  <a href="#" class="text-decoration-none">About</a>
-  <a href="#" class="text-decoration-none">Academic</a>
-  <a href="#" class="text-decoration-none">Student</a>
-  <a href="#" class="text-decoration-none">Research</a>
-  <a href="#" class="text-decoration-none">Alumni</a>
+<nav class="navbar navbar-expand-lg container-lg justify-content-center p-3 bg-white additional-nav" style="--bs-bg-opacity: .8;">
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-evenly" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a href="#" class="nav-link text-primary">Home</a>
+      <a href="#" class="nav-link text-primary">About</a>
+      <a href="#" class="nav-link text-primary">Academic</a>
+      <a href="#" class="nav-link text-primary">Student</a>
+      <a href="#" class="nav-link text-primary">Research</a>
+      <a href="#" class="nav-link text-primary">Alumni</a>
+    </div>
+  </div>
 </nav>
