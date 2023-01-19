@@ -32,6 +32,17 @@
   gap: 1rem;
 }
 
+.news-cont {
+  background-color: linear-gradient(180deg, rgba(255, 255, 255, 0), rgb(38, 60, 146));
+  position: relative;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors

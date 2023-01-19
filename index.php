@@ -2,7 +2,10 @@
 
 <section class="hero container-fluid d-flex py-2">
     <div class="row align-items-end w-100 flex-grow-1">
-      <h1 class="fw-bold text-barmeno text-primary text-center col">Inspiring Innovation with Integrity</h1>
+      <div class="col">
+        <h1 class="text-barmeno text-primary text-center display-4">Inspiring Innovation with Integrity</h1>
+        <h2 class="text-barmeno text-black text-center display-6">in Agriculture, Ocean and Biosciences for a Sustainable World</h2>
+      </div>
     </div>
 </section>
 
@@ -39,8 +42,12 @@
   </div>
   
   <div class="grid-container my-4">
-    <img style="grid-column: 1 / 3; grid-row: 1 / 3; height: 100%;" 
-    src="wp-content/themes/bootstrap/assets/img/image 2.png" alt="" class="img-fluid">
+    <div style="grid-column: 1 / 3; grid-row: 1 / 3; height: 100%; background-color: linear-gradient(180deg, rgba(255,255,255,0),rgba(38, 60, 146, 1));" >
+      <div class="news-cont">
+        <img src="wp-content/themes/bootstrap/assets/img/image 2.png" alt="" class="img-fluid">
+        <p class="text-white bottom-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      </div>
+    </div>
     <img style="grid-column: 3 / 5; grid-row: 1 / 2;"
     src="wp-content/themes/bootstrap/assets/img/image 3.png" alt="" class="img-fluid">
     <img style="grid-column: 3 / 4; grid-row: 2 / 3;"

@@ -36,4 +36,15 @@ $navbar-h: 125px;
   gap: 1rem;
 }
 
+.news-cont {
+  background-color: linear-gradient(180deg, rgba(255,255,255,0),rgba(38, 60, 146, 1));
+  position: relative;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 8px;
+  left: 16px;
+}
+
 @import "../node_modules/bootstrap/scss/bootstrap";

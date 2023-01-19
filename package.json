@@ -2,5 +2,8 @@
   "dependencies": {
     "bootstrap": "^5.2.3",
     "sass": "^1.57.1"
+  },
+  "scripts": {
+    "dev" : "sass --watch bootstrap/bootstrap.scss bootstrap/bootstrap.css"
   }
 }
