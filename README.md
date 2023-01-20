@@ -7,6 +7,8 @@
 - install dependencies `npm install`
 
 ### Watching `sass` file
+`npm run dev`
+or
 `sass --watch bootstrap/bootstrap.scss bootstrap/bootstrap.css`
 
 ## Build

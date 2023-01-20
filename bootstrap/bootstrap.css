@@ -15,6 +15,7 @@
   z-index: 1;
   position: relative;
   height: 66px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
 .text-barmeno {
