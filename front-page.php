@@ -42,10 +42,12 @@
   </div>
   
   <div class="grid-container my-4">
-    <div class="news-cont" style="grid-column: 1 / 3; grid-row: 1 / 3; height: 100%;" >
-        <img src="wp-content/themes/bootstrap/assets/img/image 2.png" alt="" class="img-fluid" style="display: block;">
-        <p class="text-white bottom-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-    </div>
+    <a href="#" style="grid-column: 1 / 3; grid-row: 1 / 3; height: 100%; position:relative;">
+      <div class="news-cont">
+          <img src="wp-content/themes/bootstrap/assets/img/image 2.png" alt="" class="img-fluid">
+      </div>
+      <p class="text-white bottom-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </a>
     <img style="grid-column: 3 / 5; grid-row: 1 / 2;"
     src="wp-content/themes/bootstrap/assets/img/image 3.png" alt="" class="img-fluid">
     <img style="grid-column: 3 / 4; grid-row: 2 / 3;"
@@ -63,14 +65,20 @@
   </div>
 
   <div class="row text-center">
-    <a href="#a" class="col-lg-4 my-3">
-      <img src="wp-content/themes/bootstrap/assets/img/638d2271ac53e 1.png" alt="" width="100%">
+    <a href="#a" class="col-lg-4 py-3">
+      <div class="news-cont">
+        <img src="wp-content/themes/bootstrap/assets/img/638d2271ac53e 1.png" alt="" class="w-100">
+      </div>
     </a>
-    <a href="#b" class="col-lg-4 my-3">
-      <img src="wp-content/themes/bootstrap/assets/img/egonrpcnnd 1.png" alt="" width="100%">
+    <a href="#b" class="col-lg-4 py-3">
+      <div class="news-cont">
+        <img src="wp-content/themes/bootstrap/assets/img/egonrpcnnd 1.png" alt="" class="w-100">
+      </div>
     </a>
-    <a href="#c" class="col-lg-4 my-3">
-      <img src="wp-content/themes/bootstrap/assets/img/ipb-raih-juara-umum-abdidaya-ormawa-kemendikbudristek-2022-xoc 1.png" alt="" width="100%">
+    <a href="#c" class="col-lg-4 py-3">
+      <div class="news-cont">
+        <img src="wp-content/themes/bootstrap/assets/img/ipb-raih-juara-umum-abdidaya-ormawa-kemendikbudristek-2022-xoc 1.png" alt="" class="w-100">
+      </div>
     </a>
   </div>
 </article>
