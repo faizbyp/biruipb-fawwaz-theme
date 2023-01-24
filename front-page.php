@@ -46,14 +46,38 @@
       <div class="news-cont">
           <img src="wp-content/themes/bootstrap/assets/img/image 2.png" alt="" class="img-fluid">
       </div>
-      <p class="text-white bottom-left">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+      <div class="text-white bottom-left">
+        <p>10 Januari 2023</p>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+      </div>
     </a>
-    <img style="grid-column: 3 / 5; grid-row: 1 / 2;"
-    src="wp-content/themes/bootstrap/assets/img/image 3.png" alt="" class="img-fluid">
-    <img style="grid-column: 3 / 4; grid-row: 2 / 3;"
-    src="wp-content/themes/bootstrap/assets/img/image 4.png" alt="" class="img-fluid">
-    <img style="grid-column: 4 / 5; grid-row: 2 / 3;"
-    src="wp-content/themes/bootstrap/assets/img/image 5.png" alt="" class="img-fluid">
+    <a href="#" style="grid-column: 3 / 5; grid-row: 1 / 2; height: 100%; position:relative;">
+      <div class="news-cont">
+          <img src="wp-content/themes/bootstrap/assets/img/image 3.png" alt="" class="img-fluid">
+      </div>
+      <div class="text-white bottom-left">
+        <p>10 Januari 2023</p>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+      </div>
+    </a>
+    <a href="#" style="grid-column: 3 / 4; grid-row: 2 / 3; height: 100%; position:relative;">
+      <div class="news-cont">
+          <img src="wp-content/themes/bootstrap/assets/img/image 4.png" alt="" class="img-fluid">
+      </div>
+      <div class="text-white bottom-left">
+        <p>10 Januari 2023</p>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+      </div>
+    </a>
+    <a href="#" style="grid-column: 4 / 5; grid-row: 2 / 3; height: 100%; position:relative;">
+      <div class="news-cont">
+          <img src="wp-content/themes/bootstrap/assets/img/image 5.png" alt="" class="img-fluid">
+      </div>
+      <div class="text-white bottom-left">
+        <p>10 Januari 2023</p>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+      </div>
+    </a>
   </div>
 </article>
 
@@ -64,20 +88,32 @@
     <hr style="border: 2px solid #263C92; opacity: 1; width: 100px;">
   </div>
 
-  <div class="row text-center">
-    <a href="#a" class="col-lg-4 py-3">
+  <div class="row">
+    <a href="#a" class="col-lg-4 py-3 pos-rel">
       <div class="news-cont">
         <img src="wp-content/themes/bootstrap/assets/img/638d2271ac53e 1.png" alt="" class="w-100">
       </div>
+      <div class="text-white bottom-left">
+        <p>10 Januari 2023</p>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+      </div>
     </a>
-    <a href="#b" class="col-lg-4 py-3">
+    <a href="#b" class="col-lg-4 py-3 pos-rel">
       <div class="news-cont">
         <img src="wp-content/themes/bootstrap/assets/img/egonrpcnnd 1.png" alt="" class="w-100">
       </div>
+      <div class="text-white bottom-left">
+        <p>10 Januari 2023</p>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
+      </div>
     </a>
-    <a href="#c" class="col-lg-4 py-3">
+    <a href="#c" class="col-lg-4 py-3 pos-rel">
       <div class="news-cont">
         <img src="wp-content/themes/bootstrap/assets/img/ipb-raih-juara-umum-abdidaya-ormawa-kemendikbudristek-2022-xoc 1.png" alt="" class="w-100">
+      </div>
+      <div class="text-white bottom-left">
+        <p>10 Januari 2023</p>
+        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
       </div>
     </a>
   </div>

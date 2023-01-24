@@ -53,6 +53,11 @@ $navbar-h: 125px;
   position: absolute;
   bottom: 8px;
   left: 16px;
+  width: calc(100% - 2rem);
+}
+
+.pos-rel {
+  position: relative;
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap";
