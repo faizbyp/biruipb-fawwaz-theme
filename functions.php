@@ -12,4 +12,19 @@ function load_bootstrap() {
 }
 add_action('wp_enqueue_scripts', 'load_bootstrap'); // menjalankan fungsi
 
+add_theme_support('menus');
+
+register_nav_menus(
+  array(
+    'top-menu' => __('Top Menu', 'theme')
+  )
+);
+
+class Walker_Top_Menu extends Walker_Nav_menu
+{
+  function start_el( &$output, $item, $depth = 0, $args = null, $id = 0 ) {
+    $output .= '<a class="nav-link text-primary" href="' . $item->url . '">' . $item->title . '</a>';
+  }
+}
+
 ?>

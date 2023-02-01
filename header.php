@@ -36,12 +36,14 @@
   </button>
   <div class="collapse navbar-collapse justify-content-evenly" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a href="#" class="nav-link text-primary">Home</a>
-      <a href="#" class="nav-link text-primary">About</a>
-      <a href="#" class="nav-link text-primary">Academic</a>
-      <a href="#" class="nav-link text-primary">Student</a>
-      <a href="#" class="nav-link text-primary">Research</a>
-      <a href="#" class="nav-link text-primary">Alumni</a>
+      <?php
+        wp_nav_menu(array(
+            'theme_location' => 'top-menu',
+            'container' => false,
+            'items_wrap' => '%3$s',
+            'walker' => new Walker_Top_Menu()
+        ));
+      ?>
     </div>
   </div>
 </nav>
