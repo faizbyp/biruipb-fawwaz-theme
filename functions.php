@@ -32,4 +32,5 @@ function getImageFromTemplate($image){
   return get_template_directory_uri().'/assets/img/'.$image;
 }
 
+
 ?>
