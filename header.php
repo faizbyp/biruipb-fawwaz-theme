@@ -9,7 +9,7 @@
 <header class="navbar bg-primary py-0">
   <div class="container px-0">
     <a class="navbar-brand col">
-      <img src="wp-content/themes/bootstrap/assets/img/logo_ipb.png" alt="IPB">
+      <img src="<?=getImageFromTemplate('logo_ipb.png')?>" alt="IPB">
     </a>
     <div class="col-3 d-none d-lg-block">
       <div class="text-end mb-2">
@@ -37,6 +37,8 @@
   <div class="collapse navbar-collapse justify-content-evenly" id="navbarNavAltMarkup">
     <div class="navbar-nav">
       <?php
+      // print_r( get_registered_nav_menus() );
+
         wp_nav_menu(array(
             'theme_location' => 'top-menu',
             'container' => false,
