@@ -13,14 +13,16 @@ $primary: #263C92;
 $font-family-base: 'Inter', sans-serif;
 $navbar-h: 125px;
 
-.navbar { height: $navbar-h; }
+// .navbar { 
+//   height: $navbar-h;
+// }
 
 .additional-nav {
   border-bottom-right-radius: 30px !important;
   border-bottom-left-radius: 30px !important;
   z-index: 1;
-  position: relative;
-  height: 66px;
+  // position: relative;
+  // min-height: 66px;
   box-shadow: 0 5px 20px rgba(0,0,0,0.2);
 }
 

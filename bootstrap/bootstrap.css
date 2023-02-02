@@ -5,16 +5,10 @@
   src: url("../assets/fonts/barmeno-regular.otf");
   src: url("../assets/fonts/barmeno-regular.otf") format("opentype"), url("../assets/fonts/barmeno-medium.otf") format("opentype"), url("../assets/fonts/barmeno-bold.otf") format("opentype"), url("../assets/fonts/barmeno-extrabold.ttf") format("trutype");
 }
-.navbar {
-  height: 125px;
-}
-
 .additional-nav {
   border-bottom-right-radius: 30px !important;
   border-bottom-left-radius: 30px !important;
   z-index: 1;
-  position: relative;
-  height: 66px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 

@@ -12,6 +12,7 @@ function load_bootstrap() {
 }
 add_action('wp_enqueue_scripts', 'load_bootstrap'); // menjalankan fungsi
 
+//add to menu items
 add_theme_support('menus');
 
 register_nav_menus(
@@ -23,14 +24,18 @@ register_nav_menus(
 class Walker_Top_Menu extends Walker_Nav_menu
 {
   function start_el( &$output, $item, $depth = 0, $args = null, $id = 0 ) {
-    $output .= '<a class="nav-link text-primary" href="' . $item->url . '">' . $item->title . '</a>';
+    $output .= ' <li class="nav-item"><a class="nav-link text-primary" href="' . $item->url . '">' . $item->title . '</a></li>';
   }
 }
 
-
+//get image from template
 function getImageFromTemplate($image){
   return get_template_directory_uri().'/assets/img/'.$image;
 }
+
+//add dynamic news in front page
+add_theme_support( 'post-thumbnails' );
+
 
 
 ?>
