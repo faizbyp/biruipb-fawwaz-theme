@@ -26,10 +26,10 @@
       </div>
 
       <div class="col">
-        <a href="https://www.facebook.com/ipbuniversity/" target="_blank"><img src="wp-content/themes/bootstrap/assets/icon/facebook.svg" alt="FB"></a>
-        <a href="https://twitter.com/ipbofficial" target="_blank"><img src="wp-content/themes/bootstrap/assets/icon/twitter.svg" alt="TW"></a>
-        <a href="https://www.instagram.com/ipbofficial/" target="_blank"><img src="wp-content/themes/bootstrap/assets/icon/mdi_instagram.svg" alt="IG"></a>
-        <a href="https://www.youtube.com/channel/UC5tlNLMFpmrY2zUvQSQS-lw" target="_blank"><img src="wp-content/themes/bootstrap/assets/icon/fe_youtube.svg" alt="YT"></a>
+        <a href="https://www.facebook.com/ipbuniversity/" target="_blank"><img src="<?=get_template_directory_uri().'/assets/icon/facebook.svg'?>" alt="FB"></a>
+        <a href="https://twitter.com/ipbofficial" target="_blank"><img src="<?=get_template_directory_uri().'/assets/icon/twitter.svg'?>" alt="TW"></a>
+        <a href="https://www.instagram.com/ipbofficial/" target="_blank"><img src="<?=get_template_directory_uri().'/assets/icon/mdi_instagram.svg'?>" alt="IG"></a>
+        <a href="https://www.youtube.com/channel/UC5tlNLMFpmrY2zUvQSQS-lw" target="_blank"><img src="<?=get_template_directory_uri().'/assets/icon/fe_youtube.svg'?>" alt="YT"></a>
       </div>
     </div>
   </div>
