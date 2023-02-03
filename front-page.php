@@ -34,6 +34,26 @@
   </div>
 </section>
 
+<?php
+$args = array(
+	'post_type'              => array( 'post' ),
+	'post_status'            => array( 'publish' ),
+	'nopaging'               => true,
+	'posts_per_page'         => '2',
+	'tax_query'              => array(
+		array(
+			'taxonomy'         => 'category',
+			'terms'            => 'news',
+			'field'            => 'slug',
+		),
+	),
+);
+
+// The Query
+$query = new WP_Query( $args );
+print("<pre>".print_r(($query),true)."</pre>");
+?>
+
 <article class="container py-5 my-5">
   <div class="row text-center d-flex justify-content-center">
     <p class="text-muted">NEWS</p>
@@ -43,13 +63,14 @@
   
   <div class="grid-container my-4">
     <a href="#" style="grid-column: 1 / 3; grid-row: 1 / 3; height: 100%; position:relative;">
-      <div class="news-cont">
+    <div class="news-cont">
           <img src="<?=getImageFromTemplate('image 2.png')?>" alt="" class="img-fluid">
       </div>
       <div class="text-white bottom-left">
         <p>10 Januari 2023</p>
         <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
       </div>
+      
     </a>
     <a href="#" style="grid-column: 3 / 5; grid-row: 1 / 2; height: 100%; position:relative;">
       <div class="news-cont">
