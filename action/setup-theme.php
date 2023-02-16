@@ -27,6 +27,8 @@ function biruIpbFawwazadd_custom_category()
 }
 add_action('after_switch_theme', 'biruIpbFawwazadd_custom_category');
 
+add_theme_support( 'post-thumbnails' );
+
 function set_default_thumbnail_on_publishs()
 {
     $upload_dir = wp_upload_dir();
