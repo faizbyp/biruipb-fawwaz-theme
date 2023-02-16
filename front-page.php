@@ -34,89 +34,11 @@
   </div>
 </section>
 
-<article class="container py-5 my-5">
-  <div class="row text-center d-flex justify-content-center">
-    <p class="text-muted">NEWS</p>
-    <h2 class="fw-bold">Latest News for You</h2>
-    <hr style="border: 2px solid #263C92; opacity: 1; width: 100px;">
-  </div>
-  
-  <div class="grid-container my-4">
-    <a href="#" style="grid-column: 1 / 3; grid-row: 1 / 3; height: 100%; position:relative;">
-      <div class="news-cont">
-          <img src="<?=getImageFromTemplate('image 2.png')?>" alt="" class="img-fluid">
-      </div>
-      <div class="text-white bottom-left">
-        <p>10 Januari 2023</p>
-        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-      </div>
-    </a>
-    <a href="#" style="grid-column: 3 / 5; grid-row: 1 / 2; height: 100%; position:relative;">
-      <div class="news-cont">
-          <img src="<?=getImageFromTemplate('image 3.png')?>" alt="" class="img-fluid">
-      </div>
-      <div class="text-white bottom-left">
-        <p>10 Januari 2023</p>
-        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-      </div>
-    </a>
-    <a href="#" style="grid-column: 3 / 4; grid-row: 2 / 3; height: 100%; position:relative;">
-      <div class="news-cont">
-          <img src="<?=getImageFromTemplate('image 4.png')?>" alt="" class="img-fluid">
-      </div>
-      <div class="text-white bottom-left">
-        <p>10 Januari 2023</p>
-        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-      </div>
-    </a>
-    <a href="#" style="grid-column: 4 / 5; grid-row: 2 / 3; height: 100%; position:relative;">
-      <div class="news-cont">
-          <img src="<?=getImageFromTemplate('image 5.png')?>" alt="" class="img-fluid">
-      </div>
-      <div class="text-white bottom-left">
-        <p>10 Januari 2023</p>
-        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-      </div>
-    </a>
-  </div>
-</article>
+<?php 
+require 'partial/news.php';
+require 'partial/achievement.php';
+?>
 
-<article class="container pb-5 mb-5">
-  <div class="row text-center d-flex justify-content-center">
-    <p class="text-muted">ACHIEVEMENT</p>
-    <h2 class="fw-bold">Our Latest Achievement</h2>
-    <hr style="border: 2px solid #263C92; opacity: 1; width: 100px;">
-  </div>
 
-  <div class="row">
-    <a href="#a" class="col-lg-4 py-3 pos-rel">
-      <div class="news-cont">
-        <img src="<?=getImageFromTemplate('638d2271ac53e 1.png')?>" alt="" class="w-100">
-      </div>
-      <div class="text-white bottom-left">
-        <p>10 Januari 2023</p>
-        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-      </div>
-    </a>
-    <a href="#b" class="col-lg-4 py-3 pos-rel">
-      <div class="news-cont">
-        <img src="<?=getImageFromTemplate('egonrpcnnd 1.png')?>" alt="" class="w-100">
-      </div>
-      <div class="text-white bottom-left">
-        <p>10 Januari 2023</p>
-        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-      </div>
-    </a>
-    <a href="#c" class="col-lg-4 py-3 pos-rel">
-      <div class="news-cont">
-        <img src="<?=getImageFromTemplate('ipb-raih-juara-umum-abdidaya-ormawa-kemendikbudristek-2022-xoc 1.png')?>" alt="" class="w-100">
-      </div>
-      <div class="text-white bottom-left">
-        <p>10 Januari 2023</p>
-        <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h3>
-      </div>
-    </a>
-  </div>
-</article>
 
 <?php get_footer();?>
