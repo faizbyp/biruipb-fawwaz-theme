@@ -9,7 +9,7 @@
 
   <header class="navbar bg-primary py-0">
     <div class="container px-0">
-      <a class="navbar-brand col">
+      <a href="/" class="navbar-brand col">
         <img src="<?= getImageFromTemplate('logo_ipb.png') ?>" alt="IPB">
       </a>
       <div class="col-3 d-none d-lg-block">

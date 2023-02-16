@@ -1,5 +1,7 @@
 <?php
 
+require_once 'action/setup-theme.php';
+
 function load_bootstrap()
 {
   wp_register_style('bootstrap', get_template_directory_uri() . '/bootstrap/bootstrap.css', array(), false, 'all'); // memanggil dir stylesheet
@@ -36,58 +38,46 @@ function getImageFromTemplate($image)
   return get_template_directory_uri() . '/assets/img/' . $image;
 }
 
-//add dynamic news in front page
-add_theme_support('post-thumbnails');
-
-//add default category "News" if theme installed in wordpress
-function biruIpbFawwazadd_custom_category()
+function biruIpbFawwazget_lastestPost()
 {
-  $category_name = 'News';
-  if (!term_exists($category_name, 'category')) {
-    wp_insert_term($category_name, 'category');
-  }
-}
-add_action('init', 'biruIpbFawwazadd_custom_category');
+  $args = array(
+    'post_type'              => array('post'),
+    'post_status'            => array('publish'),
+    'nopaging'               => false,
+    'posts_per_page'         => '4',
+    'tax_query'              => array(
+      array(
+        'taxonomy'         => 'category',
+        'terms'            => 'achievement',
+        'field'            => 'slug',
+        'operator'        => 'NOT IN',
+      ),
+    ),
+  );
 
-//
-function biruIpbFawwazinsert_default_post_news()
-{
-  $post_title = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.';
-  $post = get_page_by_title($post_title, OBJECT, 'post');
-  if (!$post) {
-    //check option
-    $flag = get_option('biruIpbFawwazinsert_default_post_news');
-    if (!$flag) {
-      // Insert the post
-      $post_id = wp_insert_post(array(
-        'post_title'    => $post_title,
-        'post_content'  => 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.',
-        'post_status'   => 'publish',
-        'post_type'     => 'post',
-        'post_category' => array(get_cat_ID('News'))
-      ));
-      // set option
-      add_option('biruIpbFawwazinsert_default_post_news', 1);
-    }
-  }
-}
-add_action('after_setup_theme', 'biruIpbFawwazinsert_default_post_news');
+  $query = new WP_Query($args);
 
-
-function biruIpbFawwazthe_deactivate()
-{
-  $post_title = 'Lorem ipsum dolor sit amet, consectetur adipisicing elit.';
-  $post = get_page_by_title($post_title, OBJECT, 'post');
-  if ($post) {
-    wp_delete_post($post->ID, true);
-  }
-  update_option('biruIpbFawwazinsert_default_post_news', 0);
+  return $query->posts;
 }
 
 
-add_action('switch_theme', 'biruIpbFawwazthe_deactivate');
+function biruIpbFawwazget_achievementPost()
+{
+  $args = array(
+    'post_type'              => array('post'),
+    'post_status'            => array('publish'),
+    'nopaging'               => false,
+    'posts_per_page'         => '3',
+    'tax_query'              => array(
+      array(
+        'taxonomy'         => 'category',
+        'terms'            => 'achievement',
+        'field'            => 'slug'
+      ),
+    ),
+  );
 
+  $query = new WP_Query($args);
 
-function biruIpbFawwazget_lastestPost(){
-  
+  return $query->posts;
 }
