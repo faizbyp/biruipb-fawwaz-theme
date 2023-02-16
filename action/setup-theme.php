@@ -2,10 +2,6 @@
 
 function biruIpbFawwazadd_custom_category()
 {
-    $category_name = 'News';
-    $category_ach = 'Achievement';
-
-
     if (!function_exists('wp_insert_category')) {
         require_once(ABSPATH . '/wp-admin/includes/taxonomy.php');
     }
@@ -102,6 +98,4 @@ function biruIpbFawwazthe_deactivate()
     }
     delete_option('biruIpbFawwazinsert_default_post_news');
 }
-
-
 add_action('switch_theme', 'biruIpbFawwazthe_deactivate');
