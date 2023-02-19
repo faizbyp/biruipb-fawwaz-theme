@@ -49,7 +49,7 @@ $navbar-h: 125px;
 .grid-news-1 {
   grid-column: 1 / 3;
   grid-row: 1 / 3;
-  height: 100%;
+  min-height: 100%;
   position: relative;
 }
 .grid-news-2 {
@@ -76,7 +76,8 @@ $navbar-h: 125px;
 
 .news-cont img {
   object-fit: cover;
-  // position: ;
+  // position: absolute;
+  min-height:100% !important;
 }
 
 .news-cont::after {
@@ -93,10 +94,16 @@ $navbar-h: 125px;
   );
 }
 
-.ach-cont {
-  position: relative;
-}
+// .ach-cont {
+//   position: relative;
+// }
 
+@media (min-width: 992px) {
+  .col-lg-4-ach {
+    flex: 0 0 auto;
+    max-width: 33% !important;
+  }
+}
 .ach-cont img {
   object-fit: cover;
 }

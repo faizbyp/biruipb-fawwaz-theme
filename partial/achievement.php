@@ -7,11 +7,9 @@
 
   <?php $achievement =  biruIpbFawwazget_achievementPost(); ?>
 
-  <div class="row">
-
+  <div class="row gap-1 justify-content-between p-0">
     <?php foreach ($achievement as $post) { ?>
-
-      <a href="<?= get_permalink($post) ?>" class="col-lg-4 py-3 pos-rel">
+      <a href="<?= get_permalink($post) ?>" class="p-0 col-lg-4-ach pos-rel">
         <div class="ach-cont">
           <img src="<?php
                     if (get_the_post_thumbnail_url($post)) {
@@ -19,7 +17,7 @@
                     } else {
                       echo getImageFromTemplate('638d2271ac53e 1.png');
                     }
-                    ?>" alt="<?= $post->post_title ?>" class="w-100">
+                    ?>" height="400" alt="<?= $post->post_title ?>" class="w-100">
         </div>
         <div class="text-white bottom-left">
           <p><?= get_the_date('d M Y', $post); ?></p>
