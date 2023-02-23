@@ -35,18 +35,28 @@
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse justify-content-evenly" id="navbarNavAltMarkup">
+    <div class="collapse navbar-collapse justify-content-evenly" id="main-menu">
       <div class="navbar-nav">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <?php
+          // wp_nav_menu(array(
+          //   'theme_location' => 'top-menu',
+          //   'container' => false,
+          //   'items_wrap' => '%3$s',
+          //   'walker' => new Walker_Top_Menu()
+          // ));
           wp_nav_menu(array(
             'theme_location' => 'top-menu',
             'container' => false,
-            'items_wrap' => '%3$s',
-            'walker' => new Walker_Top_Menu()
+            'menu_class' => '',
+            'fallback_cb' => '__return_false',
+            'items_wrap' => '<ul id="%1$s" class="navbar-nav me-auto mb-2 mb-lg-0 %2$s">%3$s</ul>',
+            'depth' => 2,
+            'walker' => new bootstrap_5_wp_nav_menu_walker()
           ));
+          
           ?>
-      </ul>
+        </ul>
       </div>
     </div>
   </nav>

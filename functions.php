@@ -18,6 +18,15 @@ add_action('wp_enqueue_scripts', 'load_bootstrap'); // menjalankan fungsi
 //add to menu items
 add_theme_support('menus');
 
+//dynamic navbar 
+if (!file_exists(get_template_directory() . '/helper/bootstrap_5_wp_nav_menu_walker.php')) {
+  // file does not exist... return an error.
+  return new WP_Error('bootstrap_5_wp_nav_menu_walker-missing', __('It appears the bootstrap_5_wp_nav_menu_walker.php file may be missing.', 'wp-bootstrap-navwalker'));
+} else {
+  // file exists... require it.
+  require_once get_template_directory() . '/helper/bootstrap_5_wp_nav_menu_walker.php';
+}
+
 register_nav_menus(
   array(
     'top-menu' => __('Top Menu', 'theme')

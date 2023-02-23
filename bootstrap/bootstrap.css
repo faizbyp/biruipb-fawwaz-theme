@@ -5,11 +5,31 @@
   src: url("../assets/fonts/barmeno-regular.otf");
   src: url("../assets/fonts/barmeno-regular.otf") format("opentype"), url("../assets/fonts/barmeno-medium.otf") format("opentype"), url("../assets/fonts/barmeno-bold.otf") format("opentype"), url("../assets/fonts/barmeno-extrabold.ttf") format("trutype");
 }
+ul.dropdown-menu li > ul.dropdown-menu {
+  left: 100%;
+  top: 0;
+}
+
+ul.dropdown-menu li:hover > ul.dropdown-menu,
+ul.dropdown-menu li:focus > ul.dropdown-menu {
+  display: block;
+}
+
 .additional-nav {
   border-bottom-right-radius: 30px !important;
   border-bottom-left-radius: 30px !important;
   z-index: 1;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+a.nav-link {
+  --bs-text-opacity: 1;
+  color: rgba(var(--bs-primary-rgb), var(--bs-text-opacity)) !important;
+}
+
+a.active {
+  --bs-text-opacity: 1;
+  color: rgba(81, 99, 168, var(--bs-text-opacity)) !important;
 }
 
 .text-barmeno {
